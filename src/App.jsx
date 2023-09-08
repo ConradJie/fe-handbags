@@ -1,10 +1,12 @@
 import './App.css'
 import Button from "./components/Button.jsx";
-import Bag1 from "./assets/bag_1.png"
-import Bag2 from "./assets/bag_2.png"
-import Bag3 from "./assets/bag_3.png"
-import Bag4 from "./assets/bag_4.png"
+import Bag1 from "./assets/bag_1.png";
+import Bag2 from "./assets/bag_2.png";
+import Bag3 from "./assets/bag_3.png";
+import Bag4 from "./assets/bag_4.png";
 import Product from "./components/Product.jsx";
+import Brand from "./assets/brand.png";
+import OurStory from "./assets/our_story.png";
 
 function clickHandler(e) {
     console.log(e.target);
@@ -36,7 +38,7 @@ function App() {
                     alt="bag1"
                     description="The handy bag"
                     price="Є400,-"
-                    />
+                />
                 <Product
                     action="Best seller"
                     imgUrl={Bag2}
@@ -59,6 +61,30 @@ function App() {
                     price="Є150,-"
                 />
             </main>
+            <footer>
+                <section>
+                    <h2>The Brand</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur consequuntur error esse
+                        exercitationem explicabo ipsa ipsum laborum maiores minus modi neque nisi nostrum, numquam quam
+                        quia repellat sapiente tempore?
+                    </p>
+                </section>
+                <section>
+                    <img src={Brand} alt="Brand"/>
+                </section>
+                <section>
+                    <img src={OurStory} alt="Our story"/>
+                </section>
+                <section>
+                    <h2>Our Story</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur consequuntur error esse
+                        exercitationem explicabo ipsa ipsum laborum maiores minus modi neque nisi nostrum, numquam quam
+                        quia repellat sapiente tempore?
+                    </p>
+                </section>
+            </footer>
         </>
     )
 }
