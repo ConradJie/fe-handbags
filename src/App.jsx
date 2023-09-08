@@ -7,6 +7,7 @@ import Bag4 from "./assets/bag_4.png";
 import Product from "./components/Product.jsx";
 import Brand from "./assets/brand.png";
 import OurStory from "./assets/our_story.png";
+import Tile from "./components/Tile.jsx";
 
 function clickHandler(e) {
     console.log(e.target);
@@ -62,28 +63,31 @@ function App() {
                 />
             </main>
             <footer>
-                <section>
-                    <h2>The Brand</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur consequuntur error esse
+                <Tile
+                    title="The brand">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur consequuntur error esse
                         exercitationem explicabo ipsa ipsum laborum maiores minus modi neque nisi nostrum, numquam quam
                         quia repellat sapiente tempore?
                     </p>
-                </section>
-                <section>
-                    <img src={Brand} alt="Brand"/>
-                </section>
-                <section>
-                    <img src={OurStory} alt="Our story"/>
-                </section>
-                <section>
-                    <h2>Our Story</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur consequuntur error esse
-                        exercitationem explicabo ipsa ipsum laborum maiores minus modi neque nisi nostrum, numquam quam
-                        quia repellat sapiente tempore?
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad aspernatur ex
+                        praesentium quo. Eaque hic in laboriosam optio. Aliquam aut autem consectetur, fuga fugit
+                        laboriosam modi! Impedit, nisi ratione!
                     </p>
-                </section>
+                </Tile>
+                <Tile
+                    imgUrl={Brand}
+                    alt={Brand}
+                />
+                <Tile
+                    imgUrl={OurStory}
+                    alt="Our story"
+                />
+                <Tile
+                    title="Our Story">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur consequuntur error esse
+                        exercitationem explicabo ipsa ipsum laborum maiores minus modi neque nisi nostrum, numquam quam
+                        quia repellat sapiente tempore?</p>
+                </Tile>
             </footer>
         </>
     )
